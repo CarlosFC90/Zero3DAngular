@@ -18,6 +18,20 @@ import { ContactComponent } from './content/contact/contact.component';
 import { ShopComponent } from './content/shop/shop.component';
 import { ProductDetailsComponent } from './content/Products/product-details/product-details.component';
 import { LoginRegisterComponent } from './content/login-register/login-register.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CartComponent } from './content/cart/cart.component';
+import { OwlModule } from "ngx-owl-carousel";
+import { FavoritosComponent } from './content/favoritos/favoritos.component';
+import { OrganizadorDetailsComponent } from './content/Products/organizador-details/organizador-details.component';
+import { PanterDetailsComponent } from './content/Products/panter-details/panter-details.component';
+import { GroguDetailsComponent } from './content/Products/grogu-details/grogu-details.component';
+import { StitchDetailsComponent } from './content/Products/stitch-details/stitch-details.component';
+import { CuboneDetailsComponent } from './content/Products/cubone-details/cubone-details.component';
+import { SoporteMultiDetailsComponent } from './content/Products/soporte-multi-details/soporte-multi-details.component';
+import { SoporteFijoDetailsComponent } from './content/Products/soporte-fijo-details/soporte-fijo-details.component';
+import { PortaHisoDetailsComponent } from './content/Products/porta-hiso-details/porta-hiso-details.component';
+
 
 @NgModule({
   declarations: [
@@ -32,12 +46,25 @@ import { LoginRegisterComponent } from './content/login-register/login-register.
     ContactComponent,
     ShopComponent,
     ProductDetailsComponent,
-    LoginRegisterComponent
+    LoginRegisterComponent,
+    CartComponent,
+    FavoritosComponent,
+    OrganizadorDetailsComponent,
+    PanterDetailsComponent,
+    GroguDetailsComponent,
+    StitchDetailsComponent,
+    CuboneDetailsComponent,
+    SoporteMultiDetailsComponent,
+    SoporteFijoDetailsComponent,
+    PortaHisoDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CarouselModule,
+    NgbModule,
+    OwlModule
   ],
   providers: [
     InfoService

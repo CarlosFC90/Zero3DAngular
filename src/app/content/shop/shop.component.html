@@ -1,11 +1,11 @@
-<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3" style="margin-top: 56px; background-color: rgb(214, 215, 216);">
     <div class="container">
         <div class="breadcrumb-content text-center">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a [routerLink]="'home'" style="text-decoration: none;"><i class="fas fa-home"></i> Inicio</a>
                 </li>
-                <li class="active">Tienda </li>
+                <li class="active"><i class="fas fa-gifts"></i> Tienda </li>
             </ul>
         </div>
     </div>
@@ -13,18 +13,18 @@
 <div class="shop-area pt-95 pb-100">
     <div class="container">
         <div class="row flex-row-reverse">
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="shop-top-bar">
                     <div class="select-shoing-wrap">
                         <div class="shop-select">
                             <select>
-                                <option value="">Sort by newness</option>
-                                <option value="">A to Z</option>
-                                <option value=""> Z to A</option>
-                                <option value="">In stock</option>
+                                <option value="">Ordenar por novedad</option>
+                                <option value="">A a Z</option>
+                                <option value=""> Z a A</option>
+                                <option value="">En stock</option>
                             </select>
                         </div>
-                        <p>Showing 1–12 of 20 result</p>
+                        <p>Mostrando 1–12 de 20 resultados</p>
                     </div>
                     <div class="shop-tab nav">
                         <a class="active" href="#shop-1" data-toggle="tab">
@@ -39,83 +39,83 @@
                     <div class="tab-content jump">
                         <div id="shop-1" class="tab-pane active">
                             <div class="row">
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
                                         <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-1.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-1-1.jpg" alt="">
+                                            <a routerLink="/picap">
+                                                <img class="default-img" src="assets/img/product/picap.jpg" alt="Picap">
+                                                <img class="hover-img" src="assets/img/product/picap.jpg" alt="Picap">
                                             </a>
                                             <span class="pink">-10%</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/picap" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/picap" style="text-decoration: none;"> Picachu/Capitan America </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 60.00</span>
+                                                <span>$ 350.00</span>
+                                                <span class="old">$ 450.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="single-product.html">
-                                                <img class="default-img" src="assets/img/product/pro-2.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-2-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 76px 0px 80px 0px;">
+                                            <a routerLink="/organizador">
+                                                <img class="default-img" src="assets/img/product/organizador.jpg" alt="Organizador">
+                                                <img class="hover-img" src="assets/img/product/organizador.jpg" alt="Organizador" style="padding: 76px 0px 80px 0px;">
                                             </a>
                                             <span class="purple">New</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/organizador" style="text-decoration: none;"> Organizador de escritorio </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
+                                                <span>$ 350.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-3.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-3-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 46px 0px 40px 0px;">
+                                            <a routerLink="/panter">
+                                                <img class="default-img" src="assets/img/product/pantera.jpg" alt="Pantera">
+                                                <img class="hover-img" src="assets/img/product/pantera.jpg" alt="Pantera" style="padding: 46px 0px 40px 0px;">
                                             </a>
                                             <span class="pink">-10%</span>
                                             <div class="product-action">
@@ -123,238 +123,238 @@
                                                     <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/panter" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/panter" style="text-decoration: none;"> Black Panter </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 60.00</span>
+                                                <span>$ 350.00</span>
+                                                <span class="old">$ 500.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-4.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-4-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 47px 0px 40px 0px;">
+                                            <a routerLink="/grogu">
+                                                <img class="default-img" src="assets/img/product/yodita.jpg" alt="Grogu">
+                                                <img class="hover-img" src="assets/img/product/yodita.jpg" alt="Grogu" style="padding: 47px 0px 40px 0px;">
                                             </a>
                                             <span class="purple">New</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/grogu" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/panter" style="text-decoration: none;"> Baby Yoda </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
+                                                <span>$ 350.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-5.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-5-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 47px 0px 40px 0px;">
+                                            <a routerLink="/stitch">
+                                                <img class="default-img" src="assets/img/product/stitch.jpg" alt="Maceta Stitch">
+                                                <img class="hover-img" src="assets/img/product/stitch.jpg" alt="Maceta Stitch" style="padding: 47px 0px 40px 0px;">
                                             </a>
                                             <span class="pink">-10%</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/stitch" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/stitch" style="text-decoration: none;"> Maceta Stitch </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 60.00</span>
+                                                <span>$ 400.00</span>
+                                                <span class="old">$ 500.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
                                         <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-6.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-6-1.jpg" alt="">
+                                            <a routerLink="/cubone">
+                                                <img class="default-img" src="assets/img/product/cubone.jpg" alt="Mascara Cubone">
+                                                <img class="hover-img" src="assets/img/product/cubone.jpg" alt="Mascara Cubone">
                                             </a>
                                             <span class="purple">New</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/cubone" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/cubone" style="text-decoration: none;"> Mascara Cubone </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
+                                                <span>$ 360.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-6 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-7.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-4-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 52px 0px 45px 0px;">
+                                            <a routerLink="/soporteMulti">
+                                                <img class="default-img" src="assets/img/product/soporte.jpg" alt="Soporte Multi">
+                                                <img class="hover-img" src="assets/img/product/soporte.jpg" alt="Soporte Multi" style="padding: 52px 0px 45px 0px;">
                                             </a>
                                             <span class="pink">-10%</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/soporteMulti" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/soporteMulti" style="text-decoration: none;"> Soporte Multidireccional </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 60.00</span>
+                                                <span>$ 560.00</span>
+                                                <span class="old">$ 760.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-8.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-6.jpg" alt="">
+                                        <div class="product-img" style="padding: 150px 0px 100px 0px;">
+                                            <a routerLink="/soporteFijo">
+                                                <img class="default-img" src="assets/img/product/soportefijo.jpg" alt="Soporte Fijo">
+                                                <img class="hover-img" src="assets/img/product/soportefijo.jpg" alt="Soporte Fijo" style="padding: 150px 0px 100px 0px;">
                                             </a>
                                             <span class="purple">New</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/soporteFijo" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/soporteFijo" style="text-decoration: none;"> Soporte Fijo Para Celular </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
+                                                <span>$ 260.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
+                                <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
-                                        <div class="product-img">
-                                            <a href="#">
-                                                <img class="default-img" src="assets/img/product/pro-1.jpg" alt="">
-                                                <img class="hover-img" src="assets/img/product/pro-1-1.jpg" alt="">
+                                        <div class="product-img" style="padding: 65px 0px 60px 0px;">
+                                            <a routerLink="/portaHiso">
+                                                <img class="default-img" src="assets/img/product/portahisopos.jpg" alt="Portahisopos">
+                                                <img class="hover-img" src="assets/img/product/portahisopos.jpg" alt="Portahisopos" style="padding: 52px 0px 45px 0px;">
                                             </a>
                                             <span class="pink">-10%</span>
                                             <div class="product-action">
                                                 <div class="pro-same-action pro-wishlist">
-                                                    <a title="Wishlist" href="#"><i class="pe-7s-like"></i></a>
+                                                    <a title="Favoritos" href="#"><i class="pe-7s-like"></i></a>
                                                 </div>
                                                 <div class="pro-same-action pro-cart">
-                                                    <a title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                    <a title="Agregar" href="#" style="text-decoration: none;"><i class="pe-7s-cart"></i> Agregar </a>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
-                                                    <a title="Quick View" href="#" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
+                                                    <a title="Ver" routerLink="/portaHiso" data-toggle="modal" data-target="#exampleModal"><i class="pe-7s-look"></i></a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-content text-center">
-                                            <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                                            <h3><a routerLink="/portaHiso" style="text-decoration: none;"> Porta Hisopos/Desmaquillantes </a></h3>
                                             <div class="product-rating">
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o yellow"></i>
-                                                <i class="fa fa-star-o"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
                                             </div>
                                             <div class="product-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 60.00</span>
+                                                <span>$ 260.00</span>
+                                                <span class="old">$ 360.00</span>
                                             </div>
                                         </div>
                                     </div>
@@ -362,14 +362,14 @@
                             </div>
                         </div>
                         <div id="shop-2" class="tab-pane">
-                            <div class="shop-list-wrap mb-30">
+                            <div class="shop-list-wrap mb-30 scroll-zoom">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="product-wrap">
                                             <div class="product-img">
-                                                <a href="#">
-                                                    <img class="default-img" src="assets/img/product/pro-1.jpg" alt="">
-                                                    <img class="hover-img" src="assets/img/product/pro-1-1.jpg" alt="">
+                                                <a [routerLink]="'/picap'">
+                                                    <img class="default-img" src="assets/img/product/picap.jpg" alt="Picap">
+                                                    <img class="hover-img" src="assets/img/product/picap.jpg" alt="Picap">
                                                 </a>
                                                 <span class="pink">-10%</span>
                                             </div>
@@ -377,37 +377,37 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-7 col-md-7 col-sm-6">
                                         <div class="shop-list-content">
-                                            <h3><a href="#">Products Name Here</a></h3>
+                                            <h3><a [routerLink]="'/picap'" style="text-decoration: none;"> Picachu/Capitan America </a></h3>
                                             <div class="product-list-price">
-                                                <span>$ 60.00</span>
-                                                <span class="old">$ 90.00</span>
+                                                <span>$ 350.00</span>
+                                                <span class="old">$ 450.00</span>
                                             </div>
                                             <div class="rating-review">
                                                 <div class="product-list-rating">
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
                                                 </div>
-                                                <a href="#">3 Reviews</a>
+                                                <!-- <a href="#">3 Reviews</a> -->
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua Ut enim ad minim </p>
                                             <div class="shop-list-btn btn-hover">
-                                                <a href="#">ADD TO CART</a>
+                                                <a href="#" style="text-decoration: none;"> AGREGAR </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="shop-list-wrap mb-30">
+                            <div class="shop-list-wrap mb-30 scroll-zoom">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="product-wrap">
                                             <div class="product-img">
-                                                <a href="#">
-                                                    <img class="default-img" src="assets/img/product/pro-2.jpg" alt="">
-                                                    <img class="hover-img" src="assets/img/product/pro-2-1.jpg" alt="">
+                                                <a routerLink="/organizador">
+                                                    <img class="default-img" src="assets/img/product/organizador.jpg" alt="Organizador">
+                                                    <img class="hover-img" src="assets/img/product/organizador.jpg" alt="Organizador">
                                                 </a>
                                                 <span class="purple">New</span>
                                             </div>
@@ -415,36 +415,36 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-7 col-md-7 col-sm-6">
                                         <div class="shop-list-content">
-                                            <h3><a href="#">Products Name Here</a></h3>
+                                            <h3><a routerLink="/organizador"> Organizador de Escritorio </a></h3>
                                             <div class="product-list-price">
-                                                <span>$ 60.00</span>
+                                                <span>$ 350.00</span>
                                             </div>
                                             <div class="rating-review">
                                                 <div class="product-list-rating">
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
                                                 </div>
-                                                <a href="#">3 Reviews</a>
+                                                <!-- <a href="#">3 Reviews</a> -->
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua Ut enim ad minim </p>
                                             <div class="shop-list-btn btn-hover">
-                                                <a href="#">ADD TO CART</a>
+                                                <a href="#"> AGREGAR </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="shop-list-wrap mb-30">
+                            <div class="shop-list-wrap mb-30 scroll-zoom">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="product-wrap">
                                             <div class="product-img">
-                                                <a href="#">
-                                                    <img class="default-img" src="assets/img/product/pro-3.jpg" alt="">
-                                                    <img class="hover-img" src="assets/img/product/pro-3-1.jpg" alt="">
+                                                <a routerLink="/panter">
+                                                    <img class="default-img" src="assets/img/product/pantera.jpg" alt="">
+                                                    <img class="hover-img" src="assets/img/product/pantera.jpg" alt="">
                                                 </a>
                                                 <span class="pink">-20%</span>
                                             </div>
@@ -452,37 +452,37 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-7 col-md-7 col-sm-6">
                                         <div class="shop-list-content">
-                                            <h3><a href="#">Products Name Here</a></h3>
+                                            <h3><a routerLink="/panter"> Black Panter </a></h3>
                                             <div class="product-list-price">
-                                                <span>$ 30.00</span>
-                                                <span class="old">$ 50.00</span>
+                                                <span>$ 350.00</span>
+                                                <span class="old">$ 500.00</span>
                                             </div>
                                             <div class="rating-review">
                                                 <div class="product-list-rating">
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
                                                 </div>
-                                                <a href="#">3 Reviews</a>
+                                                <!-- <a href="#">3 Reviews</a> -->
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua Ut enim ad minim </p>
                                             <div class="shop-list-btn btn-hover">
-                                                <a href="#">ADD TO CART</a>
+                                                <a href="#"> AGREGAR </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="shop-list-wrap mb-30">
+                            <div class="shop-list-wrap mb-30 scroll-zoom">
                                 <div class="row">
                                     <div class="col-xl-4 col-lg-5 col-md-5 col-sm-6">
                                         <div class="product-wrap">
                                             <div class="product-img">
-                                                <a href="#">
-                                                    <img class="default-img" src="assets/img/product/pro-7.jpg" alt="">
-                                                    <img class="hover-img" src="assets/img/product/pro-4-1.jpg" alt="">
+                                                <a routerLink="/grogu">
+                                                    <img class="default-img" src="assets/img/product/yodita.jpg" alt="Grogu">
+                                                    <img class="hover-img" src="assets/img/product/yodita.jpg" alt="Grogu">
                                                 </a>
                                                 <span class="purple">New</span>
                                             </div>
@@ -490,23 +490,23 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-7 col-md-7 col-sm-6">
                                         <div class="shop-list-content">
-                                            <h3><a href="#">Products Name Here</a></h3>
+                                            <h3><a routerLink="/grogu"> Baby Yoda </a></h3>
                                             <div class="product-list-price">
-                                                <span>$ 70.00</span>
+                                                <span>$ 350.00</span>
                                             </div>
                                             <div class="rating-review">
                                                 <div class="product-list-rating">
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o yellow"></i>
-                                                    <i class="fa fa-star-o"></i>
-                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
                                                 </div>
-                                                <a href="#">3 Reviews</a>
+                                                <!-- <a href="#">3 Reviews</a> -->
                                             </div>
                                             <p>Lorem ipsum dolor sit amet, consecteto adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua Ut enim ad minim </p>
                                             <div class="shop-list-btn btn-hover">
-                                                <a href="#">ADD TO CART</a>
+                                                <a href="#"> AGREGAR </a>
                                             </div>
                                         </div>
                                     </div>
@@ -521,129 +521,6 @@
                             <li><a href="#">2</a></li>
                             <li><a class="next" href="#"><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="sidebar-style mr-30">
-                    <div class="sidebar-widget">
-                        <h4 class="pro-sidebar-title">Buscar </h4>
-                        <div class="pro-sidebar-search mb-50 mt-25">
-                            <form class="pro-sidebar-search-form" action="#">
-                                <input type="text" placeholder="Search here...">
-                                <button>
-                                    <i class="pe-7s-search"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget">
-                        <h4 class="pro-sidebar-title">Filtrar </h4>
-                        <div class="sidebar-widget-list mt-30">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox"> <a href="#">En Oferta <span>4</span> </a> 
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Nuevo <span>4</span></a> 
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">En Stock <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-45">
-                        <h4 class="pro-sidebar-title">Filtrar por precio </h4>
-                        <div class="price-filter mt-10">
-                            <div class="price-slider-amount">
-                                <input type="text" id="amount" name="price"  placeholder="Add Your Price" />
-                            </div>
-                            <div id="slider-range"></div>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-50">
-                        <h4 class="pro-sidebar-title">Colour </h4>
-                        <div class="sidebar-widget-list mt-20">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Green <span>4</span> </a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Cream <span>4</span> </a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Blue <span>4</span> </a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Black <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-40">
-                        <h4 class="pro-sidebar-title">Size </h4>
-                        <div class="sidebar-widget-list mt-20">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">XL</a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">L</a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">SM</a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">XXL</a>
-                                        <span class="checkmark"></span> 
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-50">
-                        <h4 class="pro-sidebar-title">Tag </h4>
-                        <div class="sidebar-widget-tag mt-25">
-                            <ul>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">For Men</a></li>
-                                <li><a href="#">Women</a></li>
-                                <li><a href="#">Fashion</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
-<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3" style="margin-top: 56px; background-color: rgb(214, 215, 216);">
     <div class="container">
         <div class="breadcrumb-content text-center">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a [routerLink]="'home'" style="text-decoration: none;"><i class="fas fa-home"></i> Inicio</a>
                 </li>
-                <li class="active">Detalle </li>
+                <li class="active"><i class="fas fa-tasks"></i> Detalles </li>
             </ul>
         </div>
     </div>
@@ -18,11 +18,11 @@
                     <div class="product-details-img">
                         <div class="tab-content jump"> 
                             <div id="shop-details-1" class="tab-pane active large-img-style">
-                                <img src="assets/img/product-details/Picachu.jpg" alt="">
+                                <img src="assets/img/product-details/Picachu.jpg" alt="Picap">
                                 <span class="dec-price">-10%</span>
-                                <div class="img-popup-wrap">
+                                <!-- <div class="img-popup-wrap">
                                     <a class="img-popup" href="assets/img/product-details/Picachu.jpg"><i class="pe-7s-expand1"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                             <div id="shop-details-2" class="tab-pane large-img-style">
                                 <img src="assets/img/product-details/large-2.jpg" alt="">
@@ -56,13 +56,13 @@
                     </div>
                     <div class="pro-details-rating-wrap">
                         <div class="pro-details-rating">
-                            <i class="fa fa-star-o yellow"></i>
-                            <i class="fa fa-star-o yellow"></i>
-                            <i class="fa fa-star-o yellow"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
                         </div>
-                        <span><a href="#">3 Reviews</a></span>
+                        <span><a href="#" style="text-decoration: none;">3 Reviews</a></span>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
                     <div class="pro-details-list">
@@ -77,36 +77,34 @@
                             <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
                         </div>
                         <div class="pro-details-cart btn-hover">
-                            <a href="#">Agregar</a>
+                            <a href="#" style="text-decoration: none;">Agregar</a>
                         </div>
                         <div class="pro-details-wishlist">
-                            <a href="#"><i class="fa fa-heart-o"></i></a>
-                        </div>
-                        <div class="pro-details-compare">
-                            <a href="#"><i class="pe-7s-shuffle"></i></a>
+                            <a title="Favoritos" href="#"><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                     <div class="pro-details-meta">
                         <span>Categories :</span>
                         <ul>
-                            <li><a href="#">Minimal,</a></li>
-                            <li><a href="#">Furniture,</a></li>
-                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#" style="text-decoration: none;">Minimal,</a></li>
+                            <li><a href="#" style="text-decoration: none;">Furniture,</a></li>
+                            <li><a href="#" style="text-decoration: none;">Fashion</a></li>
                         </ul>
                     </div>
                     <div class="pro-details-meta">
                         <span>Tag :</span>
                         <ul>
-                            <li><a href="#">Fashion, </a></li>
-                            <li><a href="#">Furniture,</a></li>
-                            <li><a href="#">Electronic</a></li>
+                            <li><a href="#" style="text-decoration: none;">Fashion, </a></li>
+                            <li><a href="#" style="text-decoration: none;">Furniture,</a></li>
+                            <li><a href="#" style="text-decoration: none;">Electronic</a></li>
                         </ul>
                     </div>
                     <div class="pro-details-social">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a [href]="_is.info.facebook" target="_blank" style="text-decoration: none; font-size: 30px;"><i class="fab fa-facebook"></i></a></li>
+                            <li><a [href]="_is.info.twitter" target="_blank" style="text-decoration: none; font-size: 30px;"><i class="fab fa-twitter"></i></a></li>
+                            <li><a [href]="_is.info.instagram" target="_blank" style="text-decoration: none; font-size: 30px;"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a [href]="_is.info.youtube" target="_blank" style="text-decoration: none; font-size: 30px;"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -118,9 +116,9 @@
     <div class="container">
         <div class="description-review-wrapper">
             <div class="description-review-topbar nav">
-                <a data-toggle="tab" href="#des-details1">Información Adicional</a>
-                <a class="active" data-toggle="tab" href="#des-details2">Descripción</a>
-                <a data-toggle="tab" href="#des-details3">Reviews (2)</a>
+                <a data-toggle="tab" href="#des-details1" style="text-decoration: none;">Información Adicional</a>
+                <a class="active" data-toggle="tab" href="#des-details2" style="text-decoration: none;">Descripción</a>
+                <a data-toggle="tab" href="#des-details3" style="text-decoration: none;">Reviews (2)</a>
             </div>
             <div class="tab-content description-review-bottom">
                 <div id="des-details2" class="tab-pane active">
@@ -189,7 +187,7 @@
                                                 </div>
                                             </div>
                                             <div class="review-left">
-                                                <a href="#">Reply</a>
+                                                <a href="#" style="text-decoration: none;">Reply</a>
                                             </div>
                                         </div>
                                         <div class="review-bottom">
