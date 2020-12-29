@@ -31,6 +31,7 @@ import { CuboneDetailsComponent } from './content/Products/cubone-details/cubone
 import { SoporteMultiDetailsComponent } from './content/Products/soporte-multi-details/soporte-multi-details.component';
 import { SoporteFijoDetailsComponent } from './content/Products/soporte-fijo-details/soporte-fijo-details.component';
 import { PortaHisoDetailsComponent } from './content/Products/porta-hiso-details/porta-hiso-details.component';
+import { ModalComponent } from './content/modal/modal.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { PortaHisoDetailsComponent } from './content/Products/porta-hiso-details
     CuboneDetailsComponent,
     SoporteMultiDetailsComponent,
     SoporteFijoDetailsComponent,
-    PortaHisoDetailsComponent
+    PortaHisoDetailsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

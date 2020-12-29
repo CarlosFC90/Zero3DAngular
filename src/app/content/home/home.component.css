@@ -10,3 +10,7 @@
 .product-area {
     background-color: rgb(223, 219, 219);
 }
+
+.modal-dialog {
+    width: 500px;
+}
